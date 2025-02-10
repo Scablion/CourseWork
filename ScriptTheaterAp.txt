@@ -32,7 +32,7 @@ CREATE TABLE places (
     hall_id int4 REFERENCES halls(hall_id),
     place_number int4,
     row int4,
-    is_empty bit,
+    is_empty boolean,
     place_type_id int4 references place_types(type_id)
 );
 -- Создание таблицы "Режиссер"
